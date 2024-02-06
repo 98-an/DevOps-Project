@@ -9,6 +9,7 @@
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
+    "squizlabs/php_codesniffer": "^1.0",
     "phpunit/phpunit": "^10.3.2"
   },
   "autoload": {
