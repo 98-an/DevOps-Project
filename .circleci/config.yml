@@ -332,7 +332,7 @@ workflows:
 
       - hold:
         type: approval
-          requires:
+        requires:
             - lint-phpcs
             - security-check-dependencies
             - test-phpunit
