@@ -330,21 +330,21 @@ workflows:
       
       
 
-      - hold:
-          type: approval
-          requires:
-            - lint-phpcs
-            - security-check-dependencies
-            - test-phpunit
-            - phpmetrics-evaluation
-            - phpmd
-            - php-doc-check
-          filters:
-            branches:
-              only:
-                - main
-                - master
-                - /^release\/.*/
+     # - hold:
+    #    type: approval
+     #     requires:
+     #       - lint-phpcs
+      #      - security-check-dependencies
+      #      - test-phpunit
+       #     - phpmetrics-evaluation
+       #     - phpmd
+       #     - php-doc-check
+       #   filters:
+        #    branches:
+        #      only:
+       #         - main
+        #        - master
+        #        - /^release\/.*/
 
       # - deploy-ssh-production:
       #     requires:
