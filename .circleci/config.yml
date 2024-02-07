@@ -331,8 +331,8 @@ workflows:
       
 
       - hold:
-        type: approval
-        requires:
+          type: approval
+          requires:
             - lint-phpcs
             - security-check-dependencies
             - test-phpunit
@@ -345,6 +345,7 @@ workflows:
                 - main
                 - master
                 - /^release\/.*/
+
 
       # - deploy-ssh-production:
       #     requires:
